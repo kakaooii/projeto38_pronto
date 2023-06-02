@@ -22,14 +22,14 @@ class Contestant {
     //})
   }
 
-  updateCount(count){
-    database.ref("/").update({
-      contestantCount: count
-    });
-
+  //updateCount(count){
     //database.ref("/").update({
-      //contestantCount: 0
+      //contestantCount: count
     //});
+
+    database.ref("/").update({
+      contestantCount: 0
+    });
 
     //database.ref("/").update({
       //contestantCount: counts
@@ -43,4 +43,3 @@ class Contestant {
  
 
  
-}
